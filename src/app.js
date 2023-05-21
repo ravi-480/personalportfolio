@@ -18,7 +18,7 @@ app.set("views","views")
 hbs.registerPartials("views/partials")
 
 
-mongoose.connect("process.env.MONGO_URI").then(()=>{
+mongoose.connect(process.env.MONGO_URI).then(()=>{
     console.log("connected to databse");
 
 
